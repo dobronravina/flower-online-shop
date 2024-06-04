@@ -1,0 +1,98 @@
+[
+  {
+    "username": "admin",
+    "password": "1",
+    "isAdmin": true
+  },
+  {
+    "username": "user",
+    "password": "user123",
+    "isAdmin": false,
+    "cart": [
+      {
+        "id": 1,
+        "quantity": 3
+      },
+      {
+        "id": 2,
+        "quantity": 1
+      },
+      {
+        "id": 3,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "username": "u1",
+    "password": "1",
+    "isAdmin": false,
+    "cart": [
+      {
+        "id": 1,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "username": "u2",
+    "password": "2",
+    "cart": []
+  },
+  {
+    "username": "u3",
+    "password": "1",
+    "cart": []
+  },
+  {
+    "username": "u5",
+    "password": "1",
+    "cart": []
+  },
+  {
+    "username": "u4",
+    "password": "1",
+    "cart": [
+      {
+        "id": 2,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "username": "u7",
+    "password": "1",
+    "cart": []
+  },
+  {
+    "username": "u8",
+    "password": "1",
+    "cart": []
+  },
+  {
+    "username": "a1",
+    "password": "1",
+    "cart": []
+  },
+  {
+    "username": "a2",
+    "password": "1",
+    "cart": [
+      {
+        "id": 1,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "username": "b1",
+    "password": "1",
+    "cart": []
+  },
+  {
+    "username": "a5",
+    "password": "1",
+    "isAdmin": true,
+    "cart": []
+  }
+]

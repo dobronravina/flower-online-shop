@@ -1,0 +1,118 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.admin-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Плаваючі елементи */
+.float-left {
+  float: left;
+  width: 30%;
+}
+
+.float-right {
+  float: right;
+  width: 30%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Селектори */
+#user-count, #admin-count {
+  font-weight: bold;
+}
+
+ul, ol {
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Анімації */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.admin-container {
+  animation: fadeIn 1s ease-in;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 600px) {
+  .float-left, .float-right {
+    float: none;
+    width: 100%;
+  }
+}

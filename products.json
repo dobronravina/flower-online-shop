@@ -1,0 +1,51 @@
+[
+  {
+    "id" : 1,
+	"name": "Білі троянди",
+    "image": "images/flower1.jpg",
+    "price": 100,
+    "description": "Красиві білі троянди. Ціна за 1 шт."
+  },
+  {
+    "id" : 2,
+	"name": "Синьо-жовті тюльпани",
+    "image": "images/flower2.jpg",
+    "price": 150,
+    "description": "Запашні та незвичайні тюльпани. Ціна за 1шт."
+  },
+  {
+    "id" : 3,
+	"name": "Піони",
+    "image": "images/flower3.jpg",
+    "price": 250,
+    "description": "Різнокольорові піони. Ціна за 1шт."
+  },
+  {
+    "id" : 4,
+	"name": "Ромашки",
+    "image": "images/flower4.jpg",
+    "price": 1320,
+    "description": "Букет 15 шт."
+  },
+   {
+    "id" : 5,
+	"name": "Польові квіти",
+    "image": "images/flower5.jpg",
+    "price": 1720,
+    "description": "Букет 17 шт."
+  },
+   {
+    "id" : 6,
+	"name": "Букет роз",
+    "image": "images/flower6.jpg",
+    "price": 2320,
+    "description": "Букет 21 шт."
+  },
+  {
+    "id" : 7,
+	"name": "Букет хризантем",
+    "image": "images/flower7.jpg",
+    "price": 3320,
+    "description": "Букет 25 шт."
+  }
+]

@@ -1,0 +1,350 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #388e3c;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #98C6A6;
+    border-bottom: 2px солід #388e3c;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    position: relative; /* Додаємо позицію відносно */
+    flex-direction: column; /* Вертикальне вирівнювання */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; /* Додаємо авто-маргін для центрованого контейнера */
+}
+
+/* Новий контейнер для заголовка та вмісту "Про нас" */
+.about-container {
+    width: 100%;
+    text-align: center; /* Центруємо текст */
+    з-index: 1; /* Переміщення поверх відео */
+    position: relative; /* Для забезпечення коректного перекриття */
+}
+
+/* Відео на фоні */
+.video-container {
+    width: 100%;
+    height: 300px; /* Фіксована висота відео */
+    overflow: hidden;
+    position: relative; /* Відносне позиціонування для коректного відображення під текстом */
+    margin-top: 20px; /* Додаємо відступ зверху */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Стилі для продуктів */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: #ffffff;
+    border: 2px солід #388e3c;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 2px солід #388e3c;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі для корзини */
+.cart-items {
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px солід #ccc;
+    padding-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.cart-item h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.cart-item .product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item .remove-from-cart-button {
+    background-color: #e57373;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cart-item .remove-from-cart-button:hover {
+    background-color: #ef5350;
+}
+
+.cart-summary {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Додаємо проміжок знизу */
+}
+
+#total-price {
+    font-weight: bold;
+}
+
+#checkout-button {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#checkout-button:hover {
+    background-color: #2e7d32;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #a5d6a7;
+    border-top: 2px солід #388e3c;
+}
+
+.decorative-frame {
+    border: 5px солід #388e3c;
+    border-image: url('images/frame.png') 30 round;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #388e3c;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+  color: grey;
+  text-decoration: underline;
+  pointer-events: none;
+}
+
+
+.counter {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.partner-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.partner-content form {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 300px; /* Додаємо мінімальну ширину для форми */
+}
+
+.partner-content img.partner-image {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    max-height: 400px; /* обмеження висоти зображення */
+    object-fit: contain; /* збереження пропорцій зображення */
+}
+
+.partner-content form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px солід #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e7d32;
+}
+
+/* Стили для модального вікна */
+.modal {
+    display: none; 
+    position: fixed; 
+    з-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px солід #888;
+    width: 80%; 
+    max-width: 300px;
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Додамо стилі для форми */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #388e3c;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Зменшено ширину, щоб вона відповідала розміру поля пароля */
+}
+
+.form-container form button {
+    background-color: #388e3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.form-container form button:hover {
+    background-color: #2e7031;
+}

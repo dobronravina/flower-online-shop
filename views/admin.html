@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сторінка адміністратора</title>
+  <link rel="stylesheet" href="/styles/admin.css">
+</head>
+<body>
+  <nav></nav>
+  <main class="admin-container">
+    <h2>Сторінка адміністратора</h2>
+    <section>
+      <h3>Перелік користувачів</h3>
+      <table id="users-table">
+        <thead>
+          <tr>
+            <th>Ім'я користувача</th>
+            <th>Роль</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Динамічний вміст -->
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Додати нового користувача</h3>
+      <form id="add-user-form">
+        <label for="new-username">Ім'я користувача:</label>
+        <input type="text" id="new-username" name="username" required>
+        
+        <label for="new-password">Пароль:</label>
+        <input type="password" id="new-password" name="password" required>
+        
+        <label for="new-role">Роль:</label>
+        <select id="new-role" name="role" required>
+          <option value="user">Користувач</option>
+          <option value="admin">Адміністратор</option>
+        </select>
+        
+        <button type="submit">Додати користувача</button>
+      </form>
+    </section>
+    
+	<section>
+      <h3>Видалити користувача</h3>
+      <form id="delete-user-form">
+        <label for="delete-username">Ім'я користувача:</label>
+        <input type="text" id="delete-username" name="username" required>
+        <button type="submit">Перевірити та видалити</button>
+      </form>
+    </section>
+	
+	
+    <section>
+      <h3>Інформація</h3>
+      <ul>
+        <li>Кількість користувачів: <span id="user-count"></span></li>
+        <li>Кількість адміністраторів: <span id="admin-count"></span></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Квітковий Магазин. Всі права захищені.</p>
+  </footer>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для партнерів</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles/partners.css">
+</head>
+<body>
+  <main class="container">
+     <div class="partner-container">
+      <h2>Для партнерів</h2>
+      <section class="partner-content">
+        <form id="partner-form">
+          <div class="form-group">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Текст повідомлення:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Надіслати</button>
+        </form>
+		<div id="partners-root"></div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Квітковий Магазин. Всі права захищені.</p>
+  </footer>
+
+  <script src="/scripts.js"></script>
+  <script>
+    document.getElementById('partner-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      alert(`Дякую за ваш запит, ми отримали ваше повідомлення:\n\nІм'я: ${name}\nEmail: ${email}\nПовідомлення: ${message}`);
+    });
+  </script>
+   <script type="module" src="/js/build/partners.js"></script>
+  
+  
+</body>
+</html>
